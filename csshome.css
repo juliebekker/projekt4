@@ -1,38 +1,5 @@
-.item1 {
-  grid-area: logo;
-  background: red;
-}
-.item2 {
-  grid-area: samlemaeker;
-  background: blue;
-}
-.item3 {
-  grid-area: profil;
-  background: green;
-}
-.item4 {
-  grid-area: kupon;
-  background: yellow;
-}
-.item5 {
-  grid-area: venner;
-  background: orange;
-}
-.item5 {
-  grid-area: galleri;
-  background: pink;
-}
-
-
-.gridcontainer {
+.container{
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    '. logo logo .'
-    '. samlemaeker profil .'
-    '. kupon venner .'
-    '. galleri galleri .';
+  grid-gap: 1fr;
+  grid-template-columns: repeat(2, 1fr)
 }
-
-@media only screen and (max-width: 769px) {
