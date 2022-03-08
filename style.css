@@ -1,0 +1,30 @@
+.item1 {
+  grid-area: logo;
+}
+.item2 {
+  grid-area: samlemaeker;
+}
+.item3 {
+  grid-area: profil;
+}
+.item4 {
+  grid-area: kupon;
+}
+.item5 {
+  grid-area: venner;
+}
+.item5 {
+  grid-area: galleri;
+}
+
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    '. logo logo .'
+    '. samlemaeker profil .'
+    '. kupon venner .'
+    '. galleri galleri .';
+}
