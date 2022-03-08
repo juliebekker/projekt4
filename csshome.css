@@ -1,5 +1,16 @@
 .container{
   display: grid;
-  grid-gap: 1fr;
+  grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr)
+}
+
+.itemlogo{
+  background: #BADA55;
+  grid-column: 1/-1;
+  height: 300px;
+}
+
+.itemrandom{
+  background: purple;
+  height: 100px;
 }
