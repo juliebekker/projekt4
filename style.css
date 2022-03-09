@@ -35,6 +35,11 @@
   grid-area: baggrund;
 }
 
+.item8 {
+  grid-area: baggrund;
+  background-color: blue;
+}
+
 .gridcontainerkupon {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
