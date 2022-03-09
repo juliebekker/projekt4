@@ -32,12 +32,12 @@
 /*Kupon start*/
 
 .item7 {
-  grid-area: baggrund;
+  grid-area: header;
 }
 
 .item8 {
   grid-area: baggrund;
-  background-color: blue;
+  background-color: lightblue;
 }
 
 .gridcontainerkupon {
@@ -45,10 +45,41 @@
   grid-template-columns: 1fr 2fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    '. logo logo .'
-    '. samlemaeker profil .'
-    '. kupon venner .'
-    '. galleri galleri .';
+    '. header header .'
+    'baggrund baggrund baggrund baggrund'
+    'baggrund baggrund baggrund baggrund'
+    'baggrund baggrund baggrund baggrund';
+}
+
+.item8a {
+  grid-area: billede;
+  background-color: green;
+}
+
+.item8b {
+  grid-area: header2;
+  background-color: blue;
+}
+
+.item8c {
+  grid-area: brødtekst;
+  background-color: pink;
+}
+
+.item8 > .subcontainerkupon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  'billede billede header2 header2 header2'
+  'billede billede brødtekst brødtekst brødtekst'
+  'billede billede brødtekst brødtekst brødtekst';
+  border-radius: 25px;
+  background: white;
+  padding: 20px;
+  width: 90%;
+  height: 10%;
+  margin: 10px;
 }
 
 /*Kupon slut*/
