@@ -1,0 +1,25 @@
+.gridcontainer{
+    display:grid;
+    height:1000px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    background: #D3ECEB;
+    grid-template-areas:
+    "badge"
+    "badge"
+    "badge"
+    "badge"
+    "badge"
+    "badge"
+    "badge";
+}
+
+#badge{
+    background:#F1F8F8;
+    padding: 20px;
+    margin: 20px;
+    background-image: url(images/badgeicon.svg);
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+}
