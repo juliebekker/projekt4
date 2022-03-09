@@ -59,11 +59,14 @@
 .item8b {
   grid-area: header2;
   background-color: blue;
+  width: 300px;
+  height: 50px;
 }
 
 .item8c {
   grid-area: brødtekst;
   background-color: pink;
+  height: 80px;
 }
 
 .item8 > .subcontainerkupon {
@@ -78,7 +81,7 @@
   background: white;
   padding: 20px;
   width: 90%;
-  height: 10%;
+  height: 15%;
   margin: 10px;
 }
 
