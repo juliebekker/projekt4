@@ -13,7 +13,7 @@
 .item5 {
   grid-area: venner;
 }
-.item5 {
+.item6 {
   grid-area: galleri;
 }
 
@@ -29,4 +29,23 @@
     '. galleri galleri .';
 }
 
-@media only screen and (max-width: 769px) {
+/*Kupon start*/
+
+.item7 {
+  grid-area: kupon;
+}
+
+.gridcontainerkupon {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    '. logo logo .'
+    '. samlemaeker profil .'
+    '. kupon venner .'
+    '. galleri galleri .';
+}
+
+/*Kupon slut*/
+
+@media only screen and (max-width: 769px) {}
