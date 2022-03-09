@@ -1,3 +1,6 @@
+body {
+  background-color: #F1F8F8;
+}
 .item1 {
   grid-area: logo;
 }
@@ -33,17 +36,18 @@
 
 .item7 {
   grid-area: header;
-  margin-left: -50px;
 }
 
-.item7 > h1 {
+.gridcontainerkupon > .item7 > h1 {
   font-family: arial;
   font-weight: bold;
+  margin-left: -50px;
+  color: #003A44;
 }
 
 .item8 {
   grid-area: baggrund;
-  background-color: lightblue;
+  background-color: #D3ECEB;
 }
 
 .gridcontainerkupon {
@@ -63,7 +67,7 @@
 
 .item8a > img {
   width: 110px;
-  margin-top: 1%;
+  margin-top: 10%;
   margin-left: 0%;
 }
 
@@ -76,6 +80,7 @@
 .item8b > h2 {
   font-family: arial;
   font-weight: bold;
+  color: #003A44;
   margin-top: 5px;
   margin-left: 10px;
   margin-right: 10px;
@@ -89,6 +94,7 @@
 
 .item8c > p {
   font-family: arial;
+  color: #003A44;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: -15px;
@@ -103,7 +109,7 @@
   'billede billede brødtekst brødtekst brødtekst'
   'billede billede brødtekst brødtekst brødtekst';
   border-radius: 25px;
-  background: white;
+  background: #F1F8F8;
   padding: 20px;
   width: 430px;
   height: 10%;
@@ -111,14 +117,38 @@
 }
 
 /*Kupon slut*/
+/*QR start*/
+.item9 {
+  grid-area: qr;
+  background-color: lightgreen;
+}
+
+.gridcontainerqr > .item7 > h1 {
+  font-family: arial;
+  font-weight: bold;
+  color: #003A44;
+  display: flex;
+  justify-content: center;
+
+}
+
+.gridcontainerqr {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    '. qr .'
+    '. header .';
+}
+/*QR slut*/
 
 @media only screen and (max-width: 769px) {
-  /*kupon start*/
+  /*Kupon start*/
   .item8a > img {
     width: 110px;
-    margin-top: 12%;
+    margin-top: 10%;
     margin-left: 5%;
   }
-    /*kupon slut*/
+    /*Kupon slut*/
 
 }
