@@ -9,10 +9,17 @@ body{
 
 .logo{
   height: 200px;
-  width: 200px;
+  width: 500px;
   background: red;
+  margin: 50px;
 }
 
+.galleri{
+  height: 200px;
+  width: 500px;
+  background: blue;
+  margin: 50px;
+}
 /*Menu grid*/
 
 .wrapper{
