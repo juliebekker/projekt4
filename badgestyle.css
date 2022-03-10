@@ -22,16 +22,22 @@
     border-radius: 25px;
 }
 
+
+
 .badgeicon{
     grid-area: bicon;
 }
 
 .badgetitle{
     grid-area:btitle;
+    font-size: 38px;
+    margin: 10px;
 }
 
 .badgedesc{
     grid-area:bdesc;
+    font-size: 38px;
+    margin: 10px;
 }
 
 .badgecontainer{
