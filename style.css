@@ -124,7 +124,8 @@ h2 {
 /*QR start*/
 .item9 {
   grid-area: qr;
-  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
 }
 
 .gridcontainerqr > .item7 > h1 {
@@ -136,8 +137,9 @@ h2 {
 .gridcontainerqr {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.5fr 3fr 2fr;
   grid-template-areas:
+    '. . .'
     '. qr .'
     '. header .';
 }
