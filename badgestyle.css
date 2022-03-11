@@ -25,26 +25,32 @@
 
 
 .badgeicon{
-    grid-area: bicon;
+    margin: 10px;
 }
 
-.badgetitle{
+/*.badgetitle{
     grid-area:btitle;
     font-size: 38px;
     margin: 10px;
-}
+    padding-left: 20px;
+}*/
 
 .badgedesc{
-    grid-area:bdesc;
     font-size: 38px;
     margin: 10px;
+    padding-left: 20px;
 }
 
 .badgecontainer{
-    display:grid;
+    /*display:grid;
     grid-template-columns: 0.2fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
     "bicon btitle"
-    "bicon bdesc";
+    "bicon bdesc";*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
 }
