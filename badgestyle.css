@@ -1,10 +1,8 @@
 .gridcontainer{
-    display:grid;
+    /*display:grid;
     height:100%;
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr);
-    background: #D3ECEB;
     grid-template-areas:
     "badge"
     "badge"
@@ -12,13 +10,18 @@
     "badge"
     "badge"
     "badge"
-    "badge";
+    "badge";*/
+    display:flex;
+    flex-direction: column;
+    background: #D3ECEB;
 }
 
 .badge{
     background:#F1F8F8;
     padding: 20px;
-    margin: 20px;
+    margin: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
     border-radius: 25px;
 }
 
@@ -36,7 +39,7 @@
 }*/
 
 .badgedesc{
-    font-size: 38px;
+    font: 26px arial;
     margin: 10px;
     padding-left: 20px;
 }
@@ -52,5 +55,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+}
 
+.header{
+    font-size: 40px;
+    font-weight: bold;
+    height: 200px;
+    display:flex;
+    align-items: center;
+    padding-left: 20px;
 }
