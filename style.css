@@ -11,23 +11,7 @@ h1 {
 h2 {
   font-weight: bold;
 }
-nav ul {
-  background: pink;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
 
-nav ul li a {
-  position: relative;
-  margin: 0px 30px;
-}
-
-nav ul li a img {
-  height: 40px;
-}
 
 .item1 {
   grid-area: logo;
@@ -61,6 +45,7 @@ nav ul li a img {
 }
 
 /*Kupon start*/
+/*
 
 .item7 {
   grid-area: header;
@@ -80,7 +65,6 @@ nav ul li a img {
 }
 
 .gridcontainerkupon {
-  /*
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
   grid-template-rows: 0.1fr 1fr 2fr;
@@ -88,9 +72,6 @@ nav ul li a img {
     '. header header .'
     'baggrund baggrund baggrund baggrund'
     'nav nav nav nav';
-    */
-    display:flex;
-    flex-direction: column;
 }
 
 .item8a {
@@ -142,7 +123,7 @@ nav ul li a img {
   height: 10%;
   margin: 30px 10px 10px 10px;
 }
-
+*/
 /*Kupon slut*/
 /*QR start*/
 .item10 {
@@ -170,11 +151,13 @@ nav ul li a img {
 
 @media only screen and (max-width: 769px) {
   /*Kupon start*/
+  /*
   .item8a > img {
     width: 110px;
     margin-top: 10%;
     margin-left: 5%;
   }
+  */
     /*Kupon slut*/
 
 }
