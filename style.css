@@ -126,15 +126,21 @@ h2 {
 */
 /*Kupon slut*/
 /*QR start*/
+.item7 {
+  grid-area: header;
+}
+
 .item10 {
   grid-area: qr;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .gridcontainerqr > .item7 > h1 {
   display: flex;
   justify-content: center;
+  align-items: center;
 
 }
 
