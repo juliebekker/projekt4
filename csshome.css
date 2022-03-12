@@ -29,11 +29,6 @@ body{
 }
 /*Done h2 media*/
 
-h2:hover{
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-}
-
 
 /*logo media quirey*/
 @media screen and (max-width:767px){
@@ -112,6 +107,12 @@ h2:hover{
 }
 
 /*galleri grid*/
+
+.icon:hover{
+ shadow:
+}
+
+
 
 .wrapper{
 margin:auto;
