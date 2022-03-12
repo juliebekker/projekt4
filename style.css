@@ -80,15 +80,17 @@ nav ul li a img {
 }
 
 .gridcontainerkupon {
+  /*
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 2fr;
   grid-template-areas:
     '. header header .'
     'baggrund baggrund baggrund baggrund'
-    'baggrund baggrund baggrund baggrund'
-    'baggrund baggrund baggrund baggrund'
     'nav nav nav nav';
+    */
+    display:flex;
+    flex-direction: column;
 }
 
 .item8a {
