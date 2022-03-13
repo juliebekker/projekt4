@@ -22,7 +22,7 @@ h2 {
 .title {
   grid-area: t;
   font-size: 50px;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 .beskrivelse {
   grid-area: bsk;
@@ -30,21 +30,24 @@ h2 {
 }
 #beskrivelse{
   font-size: 17px;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 .kode {
   grid-area: k;
   background-color: lightgreen;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .unlock {
   grid-area: u;
   background-color: lightyellow;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .gridcontainer {
   display: grid;
-  grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
   grid-template-rows: 0.5fr 2fr 0.5fr 1fr 0.5fr 0.5fr 0.4fr;
   grid-template-areas:
     '. . . . .'
