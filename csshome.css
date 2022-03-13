@@ -1,13 +1,280 @@
-.container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3fr 2fr 2fr 3fr;
-  grid-gap: 20px;
+body{
+  background: #F1F8F8;
+  font-family: arial;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.item{
+/*h2 media*/
+
+@media screen and (max-width:767px){
+  h2{
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+ h2{
+   font-size: 22px;
+ }
+}
+
+@media screen and (min-width:1024px){
+ h2{
+   font-size: 25px;
+ }
+}
+/*Done h2 media*/
+
+
+/*logo media quirey*/
+@media screen and (max-width:767px){
+ .logo{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 130px;
+   width: 370px;
+   background-image: url("images/logo.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin: 50px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 450px;
+  background-image: url("images/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 50px;
+  }
+}
+
+@media screen and (min-width:1024px){
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 500px;
+  background-image: url("images/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 50px;
+}
+}
+
+/*logo done*/
+
+/*logo media quirey*/
+@media screen and (max-width:767px){
+ .galleri{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 130px;
+   width: 370px;
+   background: blue;
+   margin: 50px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+.galleri{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 450px;
   background: blue;
+  margin: 50px;
+  }
+}
+
+@media screen and (min-width:1024px){
+.galleri{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 500px;
+  background: blue;
+  margin: 50px;
+}
+}
+
+/*galleri grid*/
+
+.icon:hover{
+ shadow:
 }
 
 
-@media only screen and (max-width: 769px) {
+
+.wrapper{
+margin:auto;
+}
+
+.menu{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+}
+
+.icon{
+  display: inline-grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:767px){
+.badgeicon{
+  background-image: url("images/ucl.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.profileicon{
+  background-image: url("images/profil.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.kuponicon{
+  background-image: url("images/kupon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.friendsicon{
+  background-image: url("images/friends.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+.badgeicon{
+  background-image: url("images/ucl.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 110px;
+  width: 110px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.profileicon{
+  background-image: url("images/profil.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 110px;
+  width: 110px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.kuponicon{
+  background-image: url("images/kupon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 110px;
+  width: 110px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.friendsicon{
+  background-image: url("images/friends.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 110px;
+  width: 110px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+}
+@media screen and (min-width:1024px){
+.badgeicon{
+  background-image: url("images/ucl.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.profileicon{
+  background-image: url("images/profil.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 120px;
+  margin-left: -10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.kuponicon{
+  background-image: url("images/kupon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.friendsicon{
+  background-image: url("images/friends.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+}

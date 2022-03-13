@@ -1,51 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="dk" dir="ltr">
   <head>
-    <meta charset="utf-8"name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kupon</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="kuponcss.css">
     <script type="text/javascript" src="javascript.js" defer></script>
+    <title>Kupon</title>
   </head>
+
   <body>
-    <div class="gridcontainerkupon">
-      <header class="item7">
-        <h1>Kuponer</h1>
-      </header>
-      <main class="item8">
-        <div class="subcontainerkupon">
-          <div class="item8a">
-            <img src="images/couponicon.svg" alt="kupon">
-          </div>
-          <div class="item8b">
+
+    <header class="header"><h2>Kuponer</h2></header>
+
+    <main class="gridcontainer">
+
+      <div class="badge">
+        <div class="badgecontainer">
+           <div class="badgeicon">
+           <img src="images/couponicon.svg" alt="Kupon">
+           </div>
+           <div class="badgedesc">
             <h2>Gratis kaffe</h2>
+             <p>Kantinen giver en gratis kaffe! Tryk på denne kupon og få en QR de kan scanne i kantinen.</p>
+           </div>
+         </div>
+       </div>
+
+
+     <div class="badge">
+       <div class="badgecontainer">
+          <div class="badgeicon">
+          <img src="images/couponicon.svg" alt="Kupon">
           </div>
-          <div class="item8c">
-            <p>Kantinen giver en gratis kaffe til ! Tryk på denne kupon og få en QR de kan scanne i kantinen.</p>
+          <div class="badgedesc">
+            <h2>Gratis kage</h2>
+            <p>Kantinen giver et gratis stykke kage! Tryk på denne kupon og få en QR de kan scanne i kantinen.</p>
           </div>
         </div>
-        <div class="subcontainerkupon">
-          <div class="item8a">
-            <img src="images/couponicon.svg" alt="kupon">
-          </div>
-          <div class="item8b">
-            <h2>Gratis kaffe</h2>
-          </div>
-          <div class="item8c">
-            <p>Kantinen giver en gratis kaffe til ! Tryk på denne kupon og få en QR de kan scanne i kantinen.</p>
-          </div>
-        </div>
-        <div class="subcontainerkupon">
-          <div class="item8a">
-            <img src="images/couponicon.svg" alt="kupon">
-          </div>
-          <div class="item8b">
-            <h2>Gratis kaffe</h2>
-          </div>
-          <div class="item8c">
-            <p>Kantinen giver en gratis kaffe til ! Tryk på denne kupon og få en QR de kan scanne i kantinen.</p>
-          </div>
-        </div>
-      </main>
-    </div>
-  </body>
+      </div>
+
+      <div class="badge">
+        <div class="badgecontainer">
+           <div class="badgeicon">
+           <img src="images/couponicon.svg" alt="Kupon">
+           </div>
+           <div class="badgedesc">
+            <h2>Gratis øl</h2>
+             <p>Fredagsbaren giver en gratis øl! Tryk på denne kupon og få en QR de kan scanne til fredagsbar.</p>
+           </div>
+         </div>
+       </div>
+
+       <nav class="nav">
+         <ul>
+           <li><a href="#"><img src="images/couponicon.svg" alt="Kupon"></a></li>
+           <li><a href="#"><img src="images/friendsicon.svg" alt="Venner"></a></li>
+           <li><a href="#"><img src="images/profilicon.svg" alt="Profil"></a></li>
+           <li><a href="#"><img src="images/badgeicon.svg" alt="Badge"></a></li>
+         </ul>
+       </nav>
+
+    </main>
+
+</body>
 </html>

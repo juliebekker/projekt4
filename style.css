@@ -1,3 +1,18 @@
+body {
+  background-color: #F1F8F8;
+  color: #003A44;
+  font-family: arial;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+
 .item1 {
   grid-area: logo;
 }
@@ -30,31 +45,33 @@
 }
 
 /*Kupon start*/
+/*
 
 .item7 {
   grid-area: header;
-  margin-left: -50px;
 }
 
-.item7 > h1 {
-  font-family: arial;
-  font-weight: bold;
+.gridcontainerkupon > .item7 > h1 {
+  margin-left: -50px;
 }
 
 .item8 {
   grid-area: baggrund;
-  background-color: lightblue;
+  background-color: #D3ECEB;
+}
+
+.item9 {
+  grid-area: nav;
 }
 
 .gridcontainerkupon {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 0.1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 2fr;
   grid-template-areas:
     '. header header .'
     'baggrund baggrund baggrund baggrund'
-    'baggrund baggrund baggrund baggrund'
-    'baggrund baggrund baggrund baggrund';
+    'nav nav nav nav';
 }
 
 .item8a {
@@ -63,7 +80,7 @@
 
 .item8a > img {
   width: 110px;
-  margin-top: 1%;
+  margin-top: 10%;
   margin-left: 0%;
 }
 
@@ -74,8 +91,6 @@
 }
 
 .item8b > h2 {
-  font-family: arial;
-  font-weight: bold;
   margin-top: 5px;
   margin-left: 10px;
   margin-right: 10px;
@@ -88,7 +103,6 @@
 }
 
 .item8c > p {
-  font-family: arial;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: -15px;
@@ -103,22 +117,53 @@
   'billede billede brødtekst brødtekst brødtekst'
   'billede billede brødtekst brødtekst brødtekst';
   border-radius: 25px;
-  background: white;
+  background: #F1F8F8;
   padding: 20px;
   width: 430px;
   height: 10%;
   margin: 30px 10px 10px 10px;
 }
-
+*/
 /*Kupon slut*/
+/*QR start*/
+.item7 {
+  grid-area: header;
+}
+
+.item10 {
+  grid-area: qr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridcontainerqr > .item7 > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.gridcontainerqr {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 0.5fr 3fr 2fr;
+  grid-template-areas:
+    '. . .'
+    '. qr .'
+    '. header .';
+}
+/*QR slut*/
 
 @media only screen and (max-width: 769px) {
-  /*kupon start*/
+  /*Kupon start*/
+  /*
   .item8a > img {
     width: 110px;
-    margin-top: 12%;
+    margin-top: 10%;
     margin-left: 5%;
   }
-    /*kupon slut*/
+  */
+    /*Kupon slut*/
 
 }
