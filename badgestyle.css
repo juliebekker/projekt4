@@ -101,3 +101,31 @@
 	flex-direction: column;
 	align-items: center;
 }
+
+.footer {
+    height: 100px;
+}
+
+@media screen and (min-width:1024px){
+    .badgeicon img {
+        width: 100px;
+    }
+
+    .menubar {
+        display:none;
+    }
+
+    .badgedesc {
+        font-size: smaller;
+    }
+
+    .header {
+        font-size: medium;
+    }
+
+    .gridcontainer {
+        display: flex;
+    }
+
+
+}
