@@ -12,6 +12,8 @@ body{
 @media screen and (max-width:767px){
   h2{
     font-size: 20px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -19,12 +21,16 @@ body{
 @media screen and (min-width:768px) and (max-width:1023px){
  h2{
    font-size: 22px;
+   justify-content: center;
+   align-items: center;
  }
 }
 
 @media screen and (min-width:1024px){
  h2{
-   font-size: 25px;
+   font-size: 30px;
+   justify-content: center;
+   align-items: center;
  }
 }
 /*Done h2 media*/
@@ -114,11 +120,6 @@ body{
 
 /*galleri grid*/
 
-.icon:hover{
- shadow:
-}
-
-
 
 .wrapper{
 margin:auto;
@@ -126,7 +127,7 @@ margin:auto;
 
 .menu{
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 50px;
   grid-template-columns: 1fr 1fr;
   width: auto;
 }
@@ -149,6 +150,7 @@ margin:auto;
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-left: 10px;
 }
 
 .profileicon{
@@ -196,6 +198,7 @@ margin:auto;
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-left: 10px;
 }
 
 .profileicon{
@@ -242,6 +245,7 @@ margin:auto;
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-left: 30px;
 }
 
 .profileicon{
@@ -279,56 +283,38 @@ margin:auto;
 }
 }
 
-.carousel{
-  position: relative;
-  height: 100px;
-  width: 50px;
-  margin: 0 auto;
-}
-
-.carousel__image{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.carousel__track-container{
-  background: #bada55;
-  height: 100%;
-  position: relative;
-}
-
-.carousel__track{
-  padding: 0;
+*{
   margin: 0;
-  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.carousel__slide{
-  position: absolute;
-  top:0;
-  bottom:0;
-  width: 100px;
+.box{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+  margin-left: 82px;
 }
 
-.carousel__button{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-
+.box img{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.carousel__button--left{
-  left: -50px;
+@media screen and (min-width:1024px){
+.box{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+  margin-left: 140px;
 }
-
-.carousel__button--right{
-  right: -100px;
-}
-
-.carousel__button img{
-  width: 12px;
 }
