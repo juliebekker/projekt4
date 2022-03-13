@@ -14,4 +14,4 @@ let i =0;
  }
  window.onload = slideShow
 
- console.log(images);
+ console.log('images');

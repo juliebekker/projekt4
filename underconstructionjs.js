@@ -1,1 +1,1 @@
-alert("Denne side er for indeværende under ombygning :) ");
+alert("Denne side er for indeværende under ombygning");
