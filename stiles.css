@@ -1,14 +1,36 @@
-.bagde {
-  grid-area: b;
-  background-color: lightblue;
+body{
+  background-color: #D3ECEB;
+  text-align: center;
+  color: #21545E;
+  font-size: 100%;
+}
+
+h2 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 70%;
+}
+
+#spilbillede {
+  max-width: 100%;
+  height: auto;
+}
+
+.maerker {
+  grid-area: m;
 }
 .title {
   grid-area: t;
-  background-color: pink;
+  font-size: 50px;
+
 }
 .beskrivelse {
   grid-area: bsk;
-  background-color: lightpink;
+  background-color: lightblue;
+}
+#beskrivelse{
+  font-size: 17px;
+
 }
 .kode {
   grid-area: k;
@@ -23,10 +45,10 @@
 .gridcontainer {
   display: grid;
   grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
-  grid-template-rows: 3fr 3fr 1fr 2fr 1fr 1fr 4fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr 1fr 0.5fr 0.5fr 0.4fr;
   grid-template-areas:
     '. . . . .'
-    '. . b . .'
+    '. . m . .'
     '. . t . .'
     '. bsk bsk bsk .'
     '. k k k .'
