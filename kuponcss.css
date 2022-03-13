@@ -1,6 +1,8 @@
+/*det basale*/
+
 * {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 body {
@@ -21,6 +23,16 @@ h2 {
   font-weight: bold;
 }
 
+/*det basale*/
+
+/*navigation*/
+
+.navtop {
+  top: 0;
+  width: 100%;
+  background-color: #7499A3;
+}
+
 .nav {
   position: fixed;
   bottom: 0;
@@ -34,12 +46,18 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+
 }
 
 nav ul li a img {
   width: 100px;
+  height: 100px;
   margin: 30px;
 }
+
+/*navigation*/
+
+/*Kupon siden*/
 
 .gridcontainer{
     /*display:grid;
@@ -67,7 +85,9 @@ nav ul li a img {
     border-radius: 25px;
 }
 
-
+#badge {
+  margin-bottom: 500px;
+}
 
 .badgeicon{
     margin: 10px;
@@ -110,4 +130,13 @@ nav ul li a img {
     display:flex;
     align-items: center;
     padding-left: 20px;
+}
+
+/*Kupon siden*/
+
+
+@media only screen and (max-width: 769px) {
+  #badge {
+    margin-bottom: 0px;
+  }
 }
