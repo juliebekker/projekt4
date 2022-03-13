@@ -16,7 +16,7 @@
     background: #D3ECEB;
 }
 
-.badge{
+.badge1, .badge2, .badge3, .badge4, .badge5, .badge6, .badge7, .badge8 {
     background:#F1F8F8;
     padding: 20px;
     margin: 30px;
@@ -25,8 +25,6 @@
     border-radius: 25px;
     color: #003A44;
 }
-
-
 
 .badgeicon{
     margin: 10px;
@@ -74,14 +72,15 @@
 	height: 100px;
 	overflow: hidden;
     justify-content: space-between;
-    position: fixed;
+    position: sticky; 
     top: 0;
     width: 100%;
     align-items: center;
 }
 
-.topnav > img {
-    
+.topnav img {
+    margin-left: 20px;
+    margin-right: 30px;
 }
 
 .menubar {
