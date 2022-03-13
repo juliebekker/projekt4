@@ -44,88 +44,12 @@ h2 {
     '. galleri galleri .';
 }
 
-/*Kupon start*/
+
+/*QR start*/
 /*
 
-.item7 {
-  grid-area: header;
-}
+----> bruger popup boks i stedet for 
 
-.gridcontainerkupon > .item7 > h1 {
-  margin-left: -50px;
-}
-
-.item8 {
-  grid-area: baggrund;
-  background-color: #D3ECEB;
-}
-
-.item9 {
-  grid-area: nav;
-}
-
-.gridcontainerkupon {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 0.1fr 1fr 2fr;
-  grid-template-areas:
-    '. header header .'
-    'baggrund baggrund baggrund baggrund'
-    'nav nav nav nav';
-}
-
-.item8a {
-  grid-area: billede;
-}
-
-.item8a > img {
-  width: 110px;
-  margin-top: 10%;
-  margin-left: 0%;
-}
-
-.item8b {
-  grid-area: header2;
-  width: 300px;
-  height: 50px;
-}
-
-.item8b > h2 {
-  margin-top: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.item8c {
-  grid-area: brødtekst;
-  width: 300px;
-  height: 80px;
-}
-
-.item8c > p {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: -15px;
-}
-
-.item8 > .subcontainerkupon {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-  'billede billede header2 header2 header2'
-  'billede billede brødtekst brødtekst brødtekst'
-  'billede billede brødtekst brødtekst brødtekst';
-  border-radius: 25px;
-  background: #F1F8F8;
-  padding: 20px;
-  width: 430px;
-  height: 10%;
-  margin: 30px 10px 10px 10px;
-}
-*/
-/*Kupon slut*/
-/*QR start*/
 .item7 {
   grid-area: header;
 }
@@ -153,17 +77,10 @@ h2 {
     '. qr .'
     '. header .';
 }
+*/
 /*QR slut*/
 
 @media only screen and (max-width: 769px) {
-  /*Kupon start*/
-  /*
-  .item8a > img {
-    width: 110px;
-    margin-top: 10%;
-    margin-left: 5%;
-  }
-  */
-    /*Kupon slut*/
+
 
 }
