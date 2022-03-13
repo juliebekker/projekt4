@@ -57,21 +57,63 @@ nav ul li a img {
 
 /*navigation*/
 
+/*qr boks*/
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 15px;
+  z-index: 10;
+  background-color: #F1F8F8;
+  padding: 10% 10% 0% 10%;
+
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+.modal-qrbillede {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+}
+
+.modal-qrtekst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+/*qr boks*/
+
 /*Kupon siden*/
 
 .gridcontainer{
-    /*display:grid;
-    height:100%;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "badge"
-    "badge"
-    "badge"
-    "badge"
-    "badge"
-    "badge"
-    "badge";*/
     display:flex;
     flex-direction: column;
 }
@@ -83,22 +125,16 @@ nav ul li a img {
     margin-right: 100px;
     margin-left: 100px;
     border-radius: 25px;
+    border: none;
 }
 
-#badge {
+#margin-bottom {
   margin-bottom: 500px;
 }
 
 .badgeicon{
     margin: 10px;
 }
-
-/*.badgetitle{
-    grid-area:btitle;
-    font-size: 38px;
-    margin: 10px;
-    padding-left: 20px;
-}*/
 
 .badgeicon > img {
   width: 200px;
@@ -111,12 +147,6 @@ nav ul li a img {
 }
 
 .badgecontainer{
-    /*display:grid;
-    grid-template-columns: 0.2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "bicon btitle"
-    "bicon bdesc";*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -136,7 +166,7 @@ nav ul li a img {
 
 
 @media only screen and (max-width: 769px) {
-  #badge {
+  #margin-bottom {
     margin-bottom: 0px;
   }
 }
