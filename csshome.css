@@ -7,6 +7,26 @@ body{
   align-items: center;
 }
 
+a{
+  font-style: italic;
+  font-family: arial;
+  text-decoration: none;
+  color: red;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+h1{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+
 /*h2 media*/
 
 @media screen and (max-width:767px){
@@ -129,6 +149,7 @@ margin:auto;
   display: grid;
   grid-gap: 50px;
   grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 200px 200px;
   width: auto;
 }
 
@@ -289,6 +310,7 @@ margin:auto;
   box-sizing: border-box;
 }
 
+
 .box{
   width: 150px;
   height: 150px;
@@ -296,6 +318,7 @@ margin:auto;
   justify-content: center;
   align-items: center;
   margin: 70px;
+  margin-top: 40px;
   margin-left: 82px;
 }
 
@@ -315,6 +338,7 @@ margin:auto;
   justify-content: center;
   align-items: center;
   margin: 70px;
+  margin-top: 40px;
   margin-left: 140px;
 }
 }
