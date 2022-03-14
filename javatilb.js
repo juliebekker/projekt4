@@ -5,7 +5,6 @@ function myFunction() {
     text = "Koden er ikke gyldig";
   } else {
     text = "Koden er korrekt"
-    x.style.display = "none";
   }
   document.getElementById("indtastkode").innerHTML = text;
 }

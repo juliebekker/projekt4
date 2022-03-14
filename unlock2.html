@@ -4,12 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stiles2.css">
-    <script type="text/javascript" src="javascript.js" defer></script>
+    <script type="text/javascript" src="javatilb.js" defer></script>
     <title>Mærke - Brætspilscafe</title>
   </head>
   <body>
+    <nav class="navtop" id="navtop">
+      <ul>
+        <li><a href="#"><img src="images/backarrowicon.svg" alt="Tilbage"></a></li>
+        <li><a href="#"><img src="images/homeicon.svg" alt="Hjem"></a></li>
+        </ul>
+    </nav>
     <div class="container">
-      <div class="maerke">
+      <div class="billede">
         <img class="spilbillede" src="images/braetspil.png" alt="Logo til vores badge">
       </div>
       <div class="title">
@@ -19,13 +25,23 @@
         <p id="beskrivelse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div class="kode">
-          <p>Indtast kode:</p>
+          <p id=indtast >Indtast kode:</p>
           <input id="nummer">
           <button class="button" type="button" onclick="myFunction()">Valider</button>
           <p id="indtastkode"></p>
 
       </div>
-      <div class="unlock">Unlock</div>
+      <div class="unlock" id="margin-bottom">Unlock</div>
     </div>
+    <footer>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#"><img src="images/couponicon.svg" alt="Kupon"></a></li>
+          <li><a href="#"><img src="images/friendsicon.svg" alt="Venner"></a></li>
+          <li><a href="#"><img src="images/profilicon.svg" alt="Profil"></a></li>
+          <li><a href="#"><img src="images/badgeicon.svg" alt="Badge"></a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

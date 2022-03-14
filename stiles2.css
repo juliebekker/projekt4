@@ -8,6 +8,26 @@ body{
   color: #21545E;
   font-size: 100%;
 }
+
+.navtop {
+  top: 0;
+  width: 100%;
+  background-color: #7499A3;
+            }
+nav ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li a img {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}
+
 .container {
 padding-left: 20%;
 padding-right: 20%;
@@ -21,11 +41,6 @@ h2 {
 
 .spilbillede {
   max-width: 50%;
-}
-
-.maerke {
-  max-width: 100%;
- height: auto;
 }
 
 .title {
@@ -47,10 +62,32 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.button{
+
+
+}
+
+#indtast {
+  font-size: 20px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .unlock {
   background-color: lightyellow;
   font-family: Arial, Helvetica, sans-serif;
 }
+#margin-bottom {
+  margin-bottom: 500px;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #7499A3;
+}
+
 
 @media only screen and (max-width: 769px) {
 
