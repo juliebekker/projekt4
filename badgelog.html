@@ -9,7 +9,27 @@
 
   <body>
 
+      <!--  Sidebar -->
+
+      <div class="sidebar">
+        <ul>
+         <li> <a href="#" class="menu-item">
+            <img src="/images/couponicon.svg" width="100px" alt="coupons"> Kuponer
+          </a></li>
+          <li><a href="#" class="menu-item">
+            <img src="/images/badgeicon.svg" width="80px" alt="badges"> Samlemærker
+          </a></li>
+          <li><a href="#" class="menu-item">
+            <img src="/images/profilicon.svg" width="70px" alt="profile"> Profil
+          </a></li>
+          <li><a href="#" class="menu-item">
+            <img src="/images/friendsicon.svg" width="90px" alt="friends"> Venner
+          </a></li>
+        </ul>
+      </div>
+    </div>
     
+    <!-- <button onclick="myFunction()">Låste</button> -->
 
     <div class="topnav">
       <a href="#" class="topnav-item">
@@ -18,9 +38,11 @@
       <a href="#" class="topnav-item">
       <img src="/images/homeicon.svg" width="80px" alt="home">
       </a>
+      <div class="toggle" onclick="toggleClassName();"></div>
     </div>
     
     <header class="header"><h2>Alle samlemærker</h2></header>
+
 
     <div class="menubar">
       <a href="#" class="menu-item">
@@ -37,9 +59,16 @@
       </a>
     </div>
 
-    <div class="gridcontainer">
+<button class="tablink" onclick="openPage('Alle', this, '#D3ECEB')">Alle</button>
+<button class="tablink" onclick="openPage('Laest', this, '#D3ECEB')" id="defaultOpen">Låste</button>
+<button class="tablink" onclick="openPage('Optjent', this, '#D3ECEB')">Optjente</button>
+  </div>
 
-      <div class="badge1">
+  <hr>
+
+    <div id="Alle" class="tabcontent">
+      
+       <div class="badge1">
         <div class="badgecontainer">
            <div class="badgeicon">
            <img src="images/badges/adobepro.png" alt="Adobe badge" width="200px">
@@ -51,56 +80,7 @@
          </div>
        </div>
 
-      
-     <div class="badge2">
-       <div class="badgecontainer">
-          <div class="badgeicon">
-          <img src="images/badges/3dprinter.png" width="200px" alt="Samlemærke">
-          </div>
-          <div class="badgedesc">
-            <h2>Fremtiden er nu!</h2>
-            <p>Bestil en tid hos fablab og prøv deres 3D printere!</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="badge3">
-        <div class="badgecontainer">
-           <div class="badgeicon">
-           <img src="images/badges/beerbadge.png" width="200px" alt="Samlemærke">
-           </div>
-           <div class="badgedesc">
-            <h2>Skål!</h2>
-             <p>Tag ned og drik en øl eller sodavand i fredagsbaren..... </p>
-           </div>
-         </div>
-       </div>
-        
-       <div class="badge4">
-        <div class="badgecontainer">
-           <div class="badgeicon">
-           <img src="images/badges/kantinevs2.png" width="200px" alt="Samlemærke">
-           </div>
-           <div class="badgedesc">
-            <h2>Besøg kantinen</h2>
-             <p>Har du prøvet kantinens kaffe på en træt dag? Det er det....</p>
-           </div>
-         </div>
-       </div>
-        
-       <div class="badge5">
-        <div class="badgecontainer">
-           <div class="badgeicon">
-           <img src="images/badges/printer.png" width="200px" alt="Samlemærke">
-           </div>
-           <div class="badgedesc">
-            <h2>Hvor er printerne?</h2>
-             <p>Print noget i skolens printerrum, gå derefter ned til....</p>
-           </div>
-         </div>
-       </div>
-        
-       <div class="badge6">
+       <div class="badge2">
         <div class="badgecontainer">
            <div class="badgeicon">
            <img src="images/badges/studiekort.png" width="200px" alt="Samlemærke">
@@ -112,20 +92,20 @@
            </div>
          </div>
        </div>
-        
-       <div class="badge7">
+
+       <div class="badge3">
         <div class="badgecontainer">
            <div class="badgeicon">
-           <img src="images/badges/studiemakker.png" width="200px" alt="Samlemærke">
+           <img src="images/badges/beerbadge.png" width="200px" alt="Samlemærke">
            </div>
            <div class="badgedesc">
-            <h2>Studie på tværs!</h2>
-             <p>Deltag i forløbet "studiemakker på tværs" og....</p>
+            <h2>Skål!</h2>
+             <p>Tag ned og drik en øl eller sodavand i fredagsbaren..... </p>
            </div>
          </div>
        </div>
-        
-       <div class="badge8">
+
+       <div class="badge4">
         <div class="badgecontainer">
            <div class="badgeicon">
            <img src="images/badges/greenscreen.png" width="200px" alt="Samlemærke">
@@ -136,6 +116,156 @@
            </div>
          </div>
        </div>
+
+       <div class="badge5">
+         <a href="unlock.html">
+        <div class="badgecontainer">
+           <div class="badgeicon">
+           <img src="images/badges/kantinevs2grey.png" width="200px" alt="Samlemærke">
+           </div></a>
+           <div class="badgedesc">
+            <h2>Besøg kantinen</h2>
+             <p>Har du prøvet kantinens kaffe på en træt dag? Det er det....</p>
+           </div>
+         </div>
+       </div>
+
+       <div class="badge6">
+         <div class="badgecontainer">
+          <div class="badgeicon">
+          <img src="images/badges/3dprintergrey.png" width="200px" alt="Samlemærke">
+          </div>
+          <div class="badgedesc">
+            <h2>Fremtiden er nu!</h2>
+            <p>Bestil en tid hos fablab og prøv deres 3D printere!</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="badge7">
+        <div class="badgecontainer">
+           <div class="badgeicon">
+           <img src="images/badges/printergrey.png" width="200px" alt="Samlemærke">
+           </div>
+           <div class="badgedesc">
+            <h2>Hvor er printerne?</h2>
+             <p>Print noget i skolens printerrum, gå derefter ned til....</p>
+           </div>
+         </div>
+       </div>
+        
+       <div class="badge8">
+        <div class="badgecontainer">
+           <div class="badgeicon">
+           <img src="images/badges/studiemakkergrey.png" width="200px" alt="Samlemærke">
+           </div>
+           <div class="badgedesc">
+            <h2>Studie på tværs!</h2>
+             <p>Deltag i forløbet "studiemakker på tværs" og....</p>
+           </div>
+         </div>
+       </div>
+      </div>
+        
+      <div id="Laest" class="tabcontent">
+        <div class="badge1">
+          <div class="badgecontainer">
+             <div class="badgeicon">
+             <img src="images/badges/kantinevs2grey.png" width="200px" alt="Samlemærke">
+             </div>
+             <div class="badgedesc">
+              <h2>Besøg kantinen</h2>
+               <p>Har du prøvet kantinens kaffe på en træt dag? Det er det....</p>
+             </div>
+           </div>
+         </div>
+  
+         <div class="badge2">
+           <div class="badgecontainer">
+            <div class="badgeicon">
+            <img src="images/badges/3dprintergrey.png" width="200px" alt="Samlemærke">
+            </div>
+            <div class="badgedesc">
+              <h2>Fremtiden er nu!</h2>
+              <p>Bestil en tid hos fablab og prøv deres 3D printere!</p>
+            </div>
+          </div>
+        </div>
+  
+         <div class="badge3">
+          <div class="badgecontainer">
+             <div class="badgeicon">
+             <img src="images/badges/printergrey.png" width="200px" alt="Samlemærke">
+             </div>
+             <div class="badgedesc">
+              <h2>Hvor er printerne?</h2>
+               <p>Print noget i skolens printerrum, gå derefter ned til....</p>
+             </div>
+           </div>
+         </div>
+          
+         <div class="badge4">
+          <div class="badgecontainer">
+             <div class="badgeicon">
+             <img src="images/badges/studiemakkergrey.png" width="200px" alt="Samlemærke">
+             </div>
+             <div class="badgedesc">
+              <h2>Studie på tværs!</h2>
+               <p>Deltag i forløbet "studiemakker på tværs" og....</p>
+             </div>
+           </div>
+         </div>
+      </div>
+
+        <div id="Optjent" class="tabcontent">
+          <div class="badge1">
+           <div class="badgecontainer">
+              <div class="badgeicon">
+              <img src="images/badges/adobepro.png" alt="Adobe badge" width="200px">
+              </div>
+              <div class="badgedesc">
+               <h2>Godt i gang!</h2>
+                <p>Hent og installer Adobe-pakken, henvis derefter til....</p>
+              </div>
+            </div>
+          </div>
+   
+          <div class="badge2">
+           <div class="badgecontainer">
+              <div class="badgeicon">
+              <img src="images/badges/studiekort.png" width="200px" alt="Samlemærke">
+              </div>
+              <div class="badgedesc">
+               <h2>Officielt studerende!</h2>
+                <p>Aktivér dit studiekort. 
+                 Spørg informationen om kode. </p>
+              </div>
+            </div>
+          </div>
+   
+          <div class="badge3">
+           <div class="badgecontainer">
+              <div class="badgeicon">
+              <img src="images/badges/beerbadge.png" width="200px" alt="Samlemærke">
+              </div>
+              <div class="badgedesc">
+               <h2>Skål!</h2>
+                <p>Tag ned og drik en øl eller sodavand i fredagsbaren..... </p>
+              </div>
+            </div>
+          </div>
+   
+          <div class="badge4">
+           <div class="badgecontainer">
+              <div class="badgeicon">
+              <img src="images/badges/greenscreen.png" width="200px" alt="Samlemærke">
+              </div>
+              <div class="badgedesc">
+               <h2>Green Screen Machine!</h2>
+                <p>Tag et greenscreen billede nede i medialab....</p>
+              </div>
+            </div>
+          </div>
        <footer class="footer"></footer> 
 
     </div>

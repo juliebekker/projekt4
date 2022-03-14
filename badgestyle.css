@@ -1,3 +1,8 @@
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .gridcontainer{
     /*display:grid;
     height:100%;
@@ -14,6 +19,15 @@
     display:flex;
     flex-direction: column;
     background: #D3ECEB;
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+body, html {
+  font-family: Arial;
+  font-style: bold;
 }
 
 .badge1, .badge2, .badge3, .badge4, .badge5, .badge6, .badge7, .badge8 {
@@ -79,8 +93,7 @@
 }
 
 .topnav img {
-    margin-left: 20px;
-    margin-right: 30px;
+    margin-left: 200px;
 }
 
 .menubar {
@@ -116,16 +129,113 @@
     }
 
     .badgedesc {
-        font-size: smaller;
+        font-size: medium;
     }
 
     .header {
-        font-size: medium;
+        font-size: large;
     }
 
     .gridcontainer {
         display: flex;
     }
+      
+      .topnav .toggle {
+        position: relative;
+        width: 36px;
+        height: 28px;
+        background: url(images/toggle.png);
+        background-size: cover;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+      .topnav .toggle.active {
+        background: url(images/close.png);
+        background-size: cover;
+        
+      }
+      
+      @media (max-width: 1023px) {
+        .topnav .toggle {
+          display: none;
+        }
+    }
 
-
+      /* --- SIDEBAR --- */
+    
+.sidebar {
+    position: fixed;
+    right: -200px;
+    top: 100px;
+    width: 200px;
+    height: 100%;
+    background: #7499A3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: 0.5s;
+  }
+  .sidebar.active {
+    right: 0;
+  }
+  .sidebar ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar ul li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  .sidebar ul li a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .sidebar ul li a:hover {
+    color: #3f8ffc;
+  }
 }
+
+@media (max-width: 1023px) {
+    .sidebar ul {
+        display: none;
+    }
+}
+
+
+
+.tablink {
+  border-top-left-radius:2em; 
+  border-top-right-radius:2em;
+  margin: -14px -100px 0px 0px;
+  background-color: #3E747F;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 25px 16px;
+  font-size: 24px;
+  width: 25%;
+  font-style: bold;
+}
+
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    font-style: bold;
+  }
+
+#Alle {background-color: #D3ECEB;}
+#Laest {background-color: #D3ECEB;}
+#Optjent {background-color: #D3ECEB;}
+
+hr {
+    margin-top: 61px;
+    border: none;
+  }
