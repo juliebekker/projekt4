@@ -2,69 +2,265 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styleguide.css">
     <title>Style guide</title>
   </head>
   <body>
+    <header>
+      <h1>Style Guide</h1>
+    </header>
 
     <main>
 
       <div class="farver">
 
         <div class="beskrivelse">
-          <header>Farve koder</header>
+          <h2>Farve koder</h2>
           <p>Farverne der bruges, er taget ud fra ucl's design guide.</p>
         </div>
 
-        <div class="billede"></div>
+        <div class="billede">
+          <img src="images/styleguide/farver.jpg" alt="farvekoder">
+        </div>
 
-        <div class="kode"></div>
+        <div class="kode">
+          <p>Brug rgb farvekoden i 'background-color' eller 'color' i css fil</p>
+          <ul>
+              <li>BAGGRUND #F1F8F8 (Columbia blue 20%)</li>
+              <li>IKONER #025560 (Midnight green 80%)</li>
+              <li>NAV & MENU #7499A3 (Midnight green 40%)</li>
+              <li>CTA #F58E76 (Terra cotta 100%)</li>
+              <li>LÅST #DDDDDD</li>
+          </ul>
+        </div>
 
       </div>
 
       <div class="ikoner">
 
         <div class="beskrivelse">
-          <header>Ikoner</header>
+          <h2>Ikoner</h2>
           <p>På appen/hjemmesiden bliver der brugt ikoner fx i menubar og til navigation. Alle ikonerne er ikoner de fleste kender til og har set før.</p>
         </div>
 
-        <div class="billede"></div>
+        <div class="billede">
+          <p>Hjem knap</p>
+          <img src="images/styleguide/Icon awesome-home.svg" alt="Hjem">
+        </div>
+        <div class="kode">
+          <p>placer i html</p>
+          <xmp>
+            <img src="images/styleguide/Icon awesome-home.svg" alt="Hjem">
+          </xmp>
+        </div>
 
-        <div class="kode"></div>
+        <div class="billede">
+          <p>Kupon knap</p>
+          <img src="images/styleguide/Icon awesome-ticket-alt.svg" alt="Kupon">
+        </div>
+        <div class="kode">
+          <p>placer i html</p>
+          <xmp>
+            <img src="images/styleguide/Icon awesome-ticket-alt.svg" alt="Kupon">
+          </xmp>
+        </div>
+
+        <div class="billede">
+          <p>Sociale knap</p>
+          <img src="images/styleguide/Icon awesome-user-friends.svg" alt="Sociale">
+        </div>
+        <div class="kode">
+          <p>placer i html</p>
+          <xmp>
+            <img src="images/styleguide/Icon awesome-user-friends.svg" alt="Sociale">
+          </xmp>
+        </div>
+
+        <div class="billede">
+          <p>Tilbage knap</p>
+          <img src="images/styleguide/Icon ionic-ios-arrow-back.svg" alt="Tilbage">
+        </div>
+        <div class="kode">
+          <p>placer i html</p>
+          <xmp>
+            <img src="images/styleguide/Icon ionic-ios-arrow-back.svg" alt="Tilbage">
+          </xmp>
+        </div>
+
+        <div class="billede">
+          <p>Profil knap</p>
+          <img src="images/styleguide/Icon material-person.svg" alt="Profil">
+        </div>
+        <div class="kode">
+          <p>placer i html</p>
+          <xmp>
+            <img src="images/styleguide/Icon material-person.svg" alt="Profil">
+          </xmp>
+        </div>
+
+        <div class="billede">
+          <p>Samlemærker knap</p>
+          <img src="images/styleguide/trophy.svg" alt="Samlemærker">
+        </div>
+        <div class="kode">
+          <p>placer i html</p>
+          <xmp>
+            <img src="images/styleguide/trophy.svg" alt="Samlemærker">
+          </xmp>
+        </div>
+
 
       </div>
 
       <div class="navigation">
 
         <div class="beskrivelse">
-          <header>Navigationsbare</header>
+          <h2>Navigationsbare</h2>
           <p>På appen/hjemmesiden har vi to navigationsbare. En i toppen og en i bunden. Den i toppen har en hjem og tilbage knad. Den i bunden har kuponer, sociale, profil og samlemærker knapper. I stedet for ord, vises der ikoner i vores navigationsbare. Navigationsbaren i bunden er sticky, så den sidder altid i bunden af skærmen også selvom man scroller.</p>
         </div>
 
-        <div class="billede"></div>
 
-        <div class="kode"></div>
+
+        <div class="billede">
+          <p>Top navigationsbar</p>
+          <img src="images/styleguide/topnav.JPG" alt="Top navigationsbar">
+        </div>
+        <div class="kode">
+          <p>Html</p>
+          <xmp>
+            <nav class="navtop" id="navtop">
+              <ul>
+                <li><a href="#"><img src="images/backarrowicon.svg" alt="Tilbage"></a></li>
+                <li><a href="#"><img src="images/homeicon.svg" alt="Hjem"></a></li>
+              </ul>
+            </nav>
+          </xmp>
+          <p>Css</p>
+          <xmp>
+            .navtop {
+              top: 0;
+              width: 100%;
+              background-color: #7499A3;
+            }
+            nav ul {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              list-style: none;
+
+            }
+
+            nav ul li a img {
+              width: 100px;
+              height: 100px;
+              margin: 30px;
+            }
+          </xmp>
+        </div>
+
+        <div class="billede">
+          <p>Bottom navigationsbar</p>
+          <img src="images/styleguide/bottomnav.JPG" alt="Bottom navigationsbar">
+        </div>
+        <div class="kode">
+          <p>Html</p>
+          <xmp>
+            <footer>
+              <nav class="nav" id="nav">
+                <ul>
+                  <li><a href="#"><img src="images/couponicon.svg" alt="Kupon"></a></li>
+                  <li><a href="#"><img src="images/friendsicon.svg" alt="Venner"></a></li>
+                  <li><a href="#"><img src="images/profilicon.svg" alt="Profil"></a></li>
+                  <li><a href="#"><img src="images/badgeicon.svg" alt="Badge"></a></li>
+                </ul>
+              </nav>
+            </footer>
+          </xmp>
+          <p>Css</p>
+          <xmp>
+            .nav {
+              position: fixed;
+              bottom: 0;
+              width: 100%;
+              background-color: #7499A3;
+            }
+
+            nav ul {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              list-style: none;
+
+            }
+
+            nav ul li a img {
+              width: 100px;
+              height: 100px;
+              margin: 30px;
+            }
+          </xmp>
+          <p>Javascript</p>
+          <xmp>
+            var nav = document.getElementById('nav');
+              window.onscroll = function () {
+
+                if(window.pageYOffset > 100) {
+
+                nav.style.position = "fixed";
+                nav.style.bottom = 0;
+
+              }else {
+                box.style.position = "absoulte";
+                box.style.bottom = 100;
+              }
+              }
+          </xmp>
+        </div>
 
       </div>
 
       <div class="typografi">
 
         <div class="beskrivelse">
-          <header>Typografi</header>
-          <p>Typografien er taget ud fra ucl's design guide.</p>
+          <h2>Typografi</h2>
+          <p>Typografien er taget ud fra ucl's design guide. Alt tekst har farvekoden #003A44 og er arial. Header 1 og 2 er bold, hvor normal brødtekst er normal i vægt.</p>
         </div>
 
-        <div class="billede"></div>
+        <div class="billede">
+          <img src="images/styleguide/typografi.jpg" alt="Typografi">
+        </div>
 
-        <div class="kode"></div>
+        <div class="kode">
+          <p>Kode i css</p>
+          <xmp>
+            h1 {
+              font-weight: bold;
+              color: #003A44;
+              font-family: arial;
+            }
+
+            h2 {
+              font-weight: bold;
+              color: #003A44;
+              font-family: arial;
+            }
+
+            p {
+              color: #003A44;
+              font-family: arial;
+            }
+          </xmp>
+        </div>
 
       </div>
 
-      <div class="samlemærker">
+      <div class="taps">
 
         <div class="beskrivelse">
-          <header>Samlemærker</header>
-          <p>Der er et samlemærke til hver opgave/aktivitet man kan udføre på appen. Hver mærke kommer i farver og i gråtone. Hvis den er grå på din app, er den låst og hvis den er farvet er den optjent.</p>
+          <h2>Taps</h2>
+          <p>Der er inde under vores samlemærkeside, en tap-bar, med tre taps der sortere samlemærkerne.</p>
         </div>
 
         <div class="billede"></div>
