@@ -148,7 +148,7 @@ body, html {
 .tablink {
   border-top-left-radius:2em; 
   border-top-right-radius:2em;
-  margin: 0px -60px 0px 0px;
+  margin: -14px -100px 0px 0px;
   background-color: #3E747F;
   color: white;
   float: left;
@@ -156,7 +156,7 @@ body, html {
   outline: none;
   cursor: pointer;
   padding: 25px 16px;
-  font-size: 17px;
+  font-size: 24px;
   width: 25%;
   font-style: bold;
 }
