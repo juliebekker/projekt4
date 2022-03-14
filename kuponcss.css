@@ -17,10 +17,19 @@ header {
 
 h1 {
   font-weight: bold;
+  color: #003A44;
+  font-family: arial;
 }
 
 h2 {
   font-weight: bold;
+  color: #003A44;
+  font-family: arial;
+}
+
+p {
+  color: #003A44;
+  font-family: arial;
 }
 
 /*det basale*/
@@ -144,6 +153,7 @@ nav ul li a img {
     font: 26px arial;
     margin: 10px;
     padding-left: 20px;
+    text-align: left;
 }
 
 .badgecontainer{
