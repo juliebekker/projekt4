@@ -4,6 +4,10 @@ body{
   color: #21545E;
   font-size: 100%;
 }
+.container {
+padding-left: 20%;
+padding-right: 20%;
+}
 
 h2 {
   font-weight: bold;
@@ -12,22 +16,20 @@ h2 {
 }
 
 #spilbillede {
-  max-width: 100%;
-  height: auto;
+  max-width: 100px;
 }
 
-.maerker {
-  grid-area: m;
+.maerke {
+  max-width: 100%;
+ height: auto;
 }
 
 .title {
-  grid-area: t;
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .beskrivelse {
-  grid-area: bsk;
   background-color: lightblue;
 }
 
@@ -37,28 +39,13 @@ h2 {
 }
 
 .kode {
-  grid-area: k;
   background-color: lightgreen;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .unlock {
-  grid-area: u;
   background-color: lightyellow;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.gridcontainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-  grid-template-rows: 2fr 0.5fr 1fr 0.5fr 0.5fr 0.4fr;
-  grid-template-areas:
-    '. . m . .'
-    '. . t . .'
-    '. bsk bsk bsk .'
-    '. k k k .'
-    '. . u . .'
-    '. . . . .';
 }
 
 @media only screen and (max-width: 769px) {

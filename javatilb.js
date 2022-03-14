@@ -1,10 +1,11 @@
 function myFunction() {
-  let x = document.getElementById("numb").value;
+  let x = document.getElementById("nummer").value;
   let text;
   if (isNaN(x) || x < 7 || x > 203) {
-    text = "Koden er forkert";
+    text = "Koden er ikke gyldig";
   } else {
-    text = "Koden er godkendt";
+    text = "Koden er korrekt"
+    x.style.display = "none";
   }
-  document.getElementById("demo").innerHTML = text;
+  document.getElementById("indtastkode").innerHTML = text;
 }
