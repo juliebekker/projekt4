@@ -93,8 +93,7 @@ body, html {
 }
 
 .topnav img {
-    margin-left: 20px;
-    margin-right: 30px;
+    margin-left: 200px;
 }
 
 .menubar {
@@ -140,99 +139,37 @@ body, html {
     .gridcontainer {
         display: flex;
     }
-
-    .wrapper {
-        position: relative;
-        transition: 0.5s;
-        left: 0;
-      }
-      .wrapper.active {
-        left: -250px;
-      }
       
-      /* --- HEADER --- */
-      
-      /*header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 40px 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 10000;
-        transition: 0.5s;
-      }
-      
-      header div {
-        display: flex;
-      }
-      
-      header.sticky {
-        padding: 20px 100px;
-        background: var(--grey);
-      }*/
-      
-      header .toggle {
+      .topnav .toggle {
         position: relative;
         width: 36px;
         height: 28px;
         background: url(images/toggle.png);
         background-size: cover;
         cursor: pointer;
+        margin-right: 20px;
       }
-      header .toggle.active {
+      .topnav .toggle.active {
         background: url(images/close.png);
         background-size: cover;
+        
       }
       
-      @media (min-width: 1024px) {
-        header .toggle {
+      @media (max-width: 1023px) {
+        .topnav .toggle {
           display: none;
         }
-      }
-      .logo {
-        display: flex;
-        font-size: 33px;
-        text-decoration: none;
-        color: white;
-      }
-      
-      @media (max-width: 768px) {
-        nav {
-          display: none;
-        }
-      }
-      
-      nav ul {
-        margin-left: 120px;
-        display: flex;
-        height: 100%;
-        align-items: center;
-        list-style: none;
-      }
-      
-      nav ul a {
-        padding: 20px 20px;
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-      }
-      
-      nav ul a:hover {
-        color: #3f8ffc;
-      }
+    }
 
       /* --- SIDEBAR --- */
-
+    
 .sidebar {
     position: fixed;
     right: -200px;
-    top: 0;
+    top: 100px;
     width: 200px;
     height: 100%;
-    background: var(--grey);
+    background: #7499A3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,7 +186,7 @@ body, html {
   }
   .sidebar ul li {
     list-style: none;
-    margin: 5px 0;
+    margin: 10px 0;
   }
   .sidebar ul li a {
     color: #fff;
@@ -261,6 +198,13 @@ body, html {
     color: #3f8ffc;
   }
 }
+
+@media (max-width: 1023px) {
+    .sidebar ul {
+        display: none;
+    }
+}
+
 
 
 .tablink {

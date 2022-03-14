@@ -1,3 +1,4 @@
+//Arrays?
 let allbadges = ["badge1", "badge2", "badge3", "badge4", "badge5", "badge6", "badge7", "badge8"];
 let unlockedbadges = ["badge1", "badge2", "badge3", "badge4"];
 let lockedbadges = ["badge5", "badge6", "badge7", "badge8"];
@@ -12,6 +13,21 @@ console.log(allbadges);
 console.log(lockedbadges);
 console.log(unlockedbadges);
 
+//Burger-menu til desktop
+
+function toggleClassName() {
+  var sidebar = document.querySelector(".sidebar");
+  var toggle = document.querySelector(".toggle");
+  sidebar.classList.toggle("active");
+  toggle.classList.toggle("active");
+}
+
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+//Tabs
 
     function openPage(pageName,elmnt,color) {
       let i, tabcontent, tablinks;
