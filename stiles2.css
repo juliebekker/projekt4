@@ -1,3 +1,7 @@
+*{
+  padding: 0%;
+}
+
 body{
   background-color: #D3ECEB;
   text-align: center;
@@ -16,7 +20,7 @@ h2 {
 }
 
 .spilbillede {
-  max-width: 100px;
+  max-width: 50%;
 }
 
 .maerke {
@@ -50,5 +54,8 @@ h2 {
 
 @media only screen and (max-width: 769px) {
 
-
+  .container {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
 }
