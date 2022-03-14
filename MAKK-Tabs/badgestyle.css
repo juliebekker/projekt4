@@ -1,7 +1,4 @@
-* {box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* {box-sizing: border-box}
 
 .gridcontainer{
     /*display:grid;
@@ -146,8 +143,9 @@ body, html {
 
 
 .tablink {
-  margin: 0px -45px 0px 0px;
-  border-radius: 25px;
+  border-top-left-radius:2em; 
+  border-top-right-radius:2em;
+  margin: 0px -60px 0px 0px;
   background-color: #3E747F;
   color: white;
   float: left;
@@ -171,3 +169,8 @@ body, html {
 #Alle {background-color: #D3ECEB;}
 #Laest {background-color: #D3ECEB;}
 #Optjent {background-color: #D3ECEB;}
+
+hr {
+    margin-top: 61px;
+    border: none;
+  }

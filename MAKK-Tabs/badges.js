@@ -3,10 +3,13 @@ console.log("java.js er fungerende...")
 let unlockedbadges = ["badge1", "badge2", "badge3", "badge4"];
 let lockedbadges = ["badge5", "badge6", "badge7", "badge8"];
 
+var output=document.getElementById("out");
 if (unlockedbadges[2]=="badge3"){
-    console.log ("yes")
+    alert ("yes")
+    output.innerHTML="yes";
 }else{
-    console.log ("no")
+    alert ("no")
+    output.innerHTML="no";
 }
 
 /*function myFunction() {
