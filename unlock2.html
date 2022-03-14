@@ -31,7 +31,19 @@ Når spillet er gennemført spørg ansvarshavende for brætspilscafé om kode.</
           <input id="nummer">
           <button class="button" type="button" onclick="myFunction()">OK</button>
           <p id="indtastkode"></p>
-          <input class="button" type="button" id="belønning" value="SE NY BELØNNING"/>
+          <button data-modal-target="#modal" class="button" type="button" id="belønning" onclick="myFunction()">SE NY BELØNNING</button>
+          <div class="modal active" id="modal">
+            <div class="modal-header">
+              <div class="title">TILLYKKE MED DIN NYE KUPON</div>
+              <button data-close-button class="close-button" type="button" name="button">&times</button>
+            </div>
+            <div class="modal-body">
+              <div id="modal-kuponbillede">
+               <img src="images/kupon.png" alt="Kupon logo" class="kuponbillede">
+             </div>
+            </div>
+          </div>
+          <div id="overlay"></div>
       </div>
     </div>
     <footer>

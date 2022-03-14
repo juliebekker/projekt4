@@ -1,67 +1,60 @@
-body{
-  background-color: #D3ECEB;
-  text-align: center;
-  color: #21545E;
-  font-size: 100%;
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
 }
 
-h2 {
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
   font-weight: bold;
-  font-style: italic;
-  font-size: 70%;
 }
 
-#spilbillede {
-  max-width: 100%;
-  height: auto;
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
-.maerker {
-  grid-area: m;
+.modal-body {
+  padding: 10px 15px;
 }
 
-.title {
-  grid-area: t;
-  font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
 }
 
-.beskrivelse {
-  grid-area: bsk;
-  background-color: lightblue;
-}
-
-#beskrivelse{
-  font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.kode {
-  grid-area: k;
-  background-color: lightgreen;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.unlock {
-  grid-area: u;
-  background-color: lightyellow;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.gridcontainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-  grid-template-rows: 2fr 0.5fr 1fr 0.5fr 0.5fr 0.4fr;
-  grid-template-areas:
-    '. . m . .'
-    '. . t . .'
-    '. bsk bsk bsk .'
-    '. k k k .'
-    '. . u . .'
-    '. . . . .';
-}
-
-@media only screen and (max-width: 769px) {
-
-
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
