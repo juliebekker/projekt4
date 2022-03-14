@@ -9,6 +9,8 @@ if (allbadges[2]=="badge3"){
 }
 
 console.log(allbadges);
+console.log(lockedbadges);
+console.log(unlockedbadges);
 
 
     function openPage(pageName,elmnt,color) {
