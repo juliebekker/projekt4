@@ -27,6 +27,10 @@ button {
     outline: none;
 }
 
+button img {
+  width: 30px;
+}
+
 .topnav {
     background-color: #7499A3;
     display: flex;
@@ -43,6 +47,10 @@ button {
 .topnav img {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.topnav-item img {
+  width: 80px;
 }
 
 .topnav .toggle {
