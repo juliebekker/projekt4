@@ -4,16 +4,61 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stiles2.css">
+    <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="javatilb.js" defer></script>
     <title>Mærke - Brætspilscafe</title>
   </head>
   <body>
-    <nav class="navtop" id="navtop">
-      <ul>
-        <li><a href="#"><img src="images/backarrowicon.svg" alt="Tilbage"></a></li>
-        <li><a href="#"><img src="images/homeicon.svg" alt="Hjem"></a></li>
+    
+      <!--  Sidebar -->
+
+      <div class="sidebar">
+        <ul>
+         <li> <a href="kupon.html" class="menu-item">
+            <img src="images/couponicon.svg" width="100px" alt="coupons"> Kuponer
+          </a></li>
+          <li><a href="badgelog.html" class="menu-item">
+            <img src="images/badgeicon.svg" width="80px" alt="badges"> Samlemærker
+          </a></li>
+          <li><a href="underconstruction.html" class="menu-item">
+            <img src="images/profilicon.svg" width="70px" alt="profile"> Profil
+          </a></li>
+          <li><a href="underconstruction.html" class="menu-item">
+            <img src="images/friendsicon.svg" width="90px" alt="friends"> Venner
+          </a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+
+      <!-- Topnav  -->
+
+    <div class="topnav">
+      <button onclick="history.back()"> <img src="images/backarrowicon.svg" width="30px" alt="back"></button>
+      <a href="home.html" class="topnav-item">
+      <img src="images/homeicon.svg" width="80px" alt="home">
+      </a>
+      <div class="toggle" onclick="toggleClassName();"></div>
+    </div>
+    
+
+      <!-- Menu -->
+
+    <div class="menubar">
+      <a href="kupon.html" class="menu-item">
+        <img src="images/couponicon.svg" width="100px" alt="coupons"> 
+      </a>
+      <a href="badgelog.html" class="menu-item">
+        <img src="images/badgeicon.svg" width="80px" alt="badges"> 
+      </a>
+      <a href="underconstruction.html" class="menu-item">
+        <img src="images/profilicon.svg" width="70px" alt="profile"> 
+      </a>
+      <a href="underconstruction.html" class="menu-item">
+        <img src="images/friendsicon.svg" width="90px" alt="friends"> 
+      </a>
+    </div>
+
+
     <div class="container">
       <div class="billede">
         <img class="spilbillede" src="images/braetspil.png" alt="Logo til vores badge">
@@ -46,15 +91,6 @@ Når spillet er gennemført spørg ansvarshavende for brætspilscafé om kode.</
           <div id="overlay"></div>
       </div>
     </div>
-    <footer>
-      <nav class="nav" id="nav">
-        <ul>
-          <li><a href="#"><img src="images/couponicon.svg" alt="Kupon"></a></li>
-          <li><a href="#"><img src="images/friendsicon.svg" alt="Venner"></a></li>
-          <li><a href="#"><img src="images/profilicon.svg" alt="Profil"></a></li>
-          <li><a href="#"><img src="images/badgeicon.svg" alt="Badge"></a></li>
-        </ul>
-      </nav>
-    </footer>
+    <footer></footer>
   </body>
 </html>
