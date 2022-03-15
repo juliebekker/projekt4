@@ -267,18 +267,70 @@
         </div>
 
         <div class="billede">
-          <img src="images/styleguide/taps.jpg" alt="Taps">
+          <img src="images/styleguide/taps.jpg" alt="Tabs">
         </div>
 
         <div class="kode">
           <p>HTML</p>
-          <pre></pre>
+          <pre><button class="tablink" onclick="openPage('Alle', this, '#D3ECEB')" id="defaultOpen">Alle</button>
+            <button class="tablink" onclick="openPage('Laest', this, '#D3ECEB')">Låste</button>
+            <button class="tablink" onclick="openPage('Optjent', this, '#D3ECEB')">Optjent</button>
+            
+              <hr>
+            
+                <div id="Alle" class="tabcontent"></pre>
 
           <p>CSS</p>
-          <pre></pre>
+          <pre>.tablink {
+            border-top-left-radius:2em;
+            border-top-right-radius:2em;
+            margin: -17px -100px 0px 0px;
+            background-color: #3E747F;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 25px 16px;
+            font-size: 25px;
+            width: 35%;
+            font-weight: bold;
+          }
+          
+          .tabcontent {
+              color: white;
+              display: none;
+              padding: 100px 20px;
+              height: 100%;
+              font-weight: bold;
+            }
+          
+          #Alle {background-color: #D3ECEB;}
+          #Laest {background-color: #D3ECEB;}
+          #Optjent {background-color: #D3ECEB;}
+          
+          hr {
+              margin-top: 61px;
+              border: none;
+            }</pre>
 
           <p>Javascript</p>
-          <pre></pre>
+          <pre>
+            function openPage(pageName,elmnt,color) {
+              let i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+              }
+              document.getElementById(pageName).style.display = "block";
+              elmnt.style.backgroundColor = color;
+            }
+            
+            document.getElementById("defaultOpen").click();</pre>
 
         </div>
 
