@@ -34,6 +34,18 @@ p {
 
 /*det basale*/
 
+.h2 {
+  font-weight: bold;
+  color: #003A44;
+  font-family: arial;
+  font-size: 1.5em;
+}
+
+.p {
+  color: #003A44;
+  font-family: arial;
+}
+
 /*navigation*/
 
 .navtop {
