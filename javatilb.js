@@ -1,6 +1,5 @@
 document.getElementById('belønning').style.visibility='hidden';
 
-
 function myFunction() {
   let x = document.getElementById("nummer").value;
   let text;
@@ -50,3 +49,17 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
+
+//Burger-menu til desktop - Jacky
+
+function toggleClassName() {
+  var sidebar = document.querySelector(".sidebar");
+  var toggle = document.querySelector(".toggle");
+  sidebar.classList.toggle("active");
+  toggle.classList.toggle("active");
+}
+
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});

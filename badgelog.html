@@ -3,62 +3,69 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="badgestyle.css">
+    <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="badges.js" defer></script>
     <title>Samlemærker</title>
   </head>
 
   <body>
-
+    <STYLE>A {color:#003A44; text-decoration: none;} </STYLE>
+    
       <!--  Sidebar -->
 
       <div class="sidebar">
         <ul>
-         <li> <a href="#" class="menu-item">
+         <li> <a href="kupon.html" class="menu-item">
             <img src="images/couponicon.svg" width="100px" alt="coupons"> Kuponer
           </a></li>
-          <li><a href="#" class="menu-item">
+          <li><a href="badgelog.html" class="menu-item">
             <img src="images/badgeicon.svg" width="80px" alt="badges"> Samlemærker
           </a></li>
-          <li><a href="#" class="menu-item">
+          <li><a href="underconstruction.html" class="menu-item">
             <img src="images/profilicon.svg" width="70px" alt="profile"> Profil
           </a></li>
-          <li><a href="#" class="menu-item">
+          <li><a href="underconstruction.html" class="menu-item">
             <img src="images/friendsicon.svg" width="90px" alt="friends"> Venner
           </a></li>
         </ul>
       </div>
     </div>
 
+      <!-- Topnav  -->
+
     <div class="topnav">
-      <a href="#" class="topnav-item">
-      <img src="images/backarrowicon.svg" width="30px" alt="back">
-      </a>
-      <a href="#" class="topnav-item">
+      <button onclick="history.back()"> <img src="images/backarrowicon.svg" width="30px" alt="back"></button>
+      <a href="home.html" class="topnav-item">
       <img src="images/homeicon.svg" width="80px" alt="home">
       </a>
       <div class="toggle" onclick="toggleClassName();"></div>
     </div>
     
+      <!-- Header -->
+
     <header class="header"><h2>Alle samlemærker</h2></header>
 
+      <!-- Menu -->
 
     <div class="menubar">
-      <a href="#" class="menu-item">
+      <a href="kupon.html" class="menu-item">
         <img src="images/couponicon.svg" width="100px" alt="coupons"> 
       </a>
-      <a href="#" class="menu-item">
+      <a href="badgelog.html" class="menu-item">
         <img src="images/badgeicon.svg" width="80px" alt="badges"> 
       </a>
-      <a href="#" class="menu-item">
+      <a href="underconstruction.html" class="menu-item">
         <img src="images/profilicon.svg" width="70px" alt="profile"> 
       </a>
-      <a href="#" class="menu-item">
+      <a href="underconstruction.html" class="menu-item">
         <img src="images/friendsicon.svg" width="90px" alt="friends"> 
       </a>
     </div>
 
-<button class="tablink" onclick="openPage('Alle', this, '#D3ECEB')">Alle</button>
-<button class="tablink" onclick="openPage('Laest', this, '#D3ECEB')" id="defaultOpen">Låste</button>
+    <!-- Tabs -->
+
+<button class="tablink" onclick="openPage('Alle', this, '#D3ECEB')" id="defaultOpen">Alle</button>
+<button class="tablink" onclick="openPage('Laest', this, '#D3ECEB')">Låste</button>
 <button class="tablink" onclick="openPage('Optjent', this, '#D3ECEB')">Optjent</button>
   </div>
 
@@ -66,6 +73,8 @@
 
     <div id="Alle" class="tabcontent">
       
+        <!-- Badges -->
+
        <div class="badge1">
         <div class="badgecontainer">
            <div class="badgeicon">
@@ -116,14 +125,15 @@
        </div>
 
        <div class="badge5">
-         <a href="unlock.html">
+         <a href="unlock2.html">
         <div class="badgecontainer">
            <div class="badgeicon">
-           <img src="images/badges/kantinevs2grey.png" width="200px" alt="Samlemærke">
+           <img src="images/badges/brætspilgrey.png" width="200px" alt="Samlemærke">
            </div></a>
            <div class="badgedesc">
-            <h2>Besøg kantinen</h2>
-             <p>Har du prøvet kantinens kaffe på en træt dag? Det er det....</p>
+            <a href="unlock2.html">
+            <h2>Brætspilscafe</h2>
+             <p>Vidste du at UCL på Seebladsgade har sin helt egen brætspilscafe?....</p></a>
            </div>
          </div>
        </div>
@@ -166,14 +176,16 @@
       </div>
         
       <div id="Laest" class="tabcontent">
-        <div class="badge1">
+        <div class="badge5">
           <div class="badgecontainer">
+            <a href="unlock2.html">
              <div class="badgeicon">
-             <img src="images/badges/kantinevs2grey.png" width="200px" alt="Samlemærke">
-             </div>
-             <div class="badgedesc">
-              <h2>Besøg kantinen</h2>
-               <p>Har du prøvet kantinens kaffe på en træt dag? Det er det....</p>
+              <img src="images/badges/brætspilgrey.png" width="200px" alt="Samlemærke">
+            </div>
+            <div class="badgedesc">
+             <a href="unlock2.html">
+             <h2>Brætspilscafe</h2>
+              <p>Vidste du at UCL på Seebladsgade har sin helt egen brætspilscafe?....</p></a>
              </div>
            </div>
          </div>
@@ -264,6 +276,7 @@
               </div>
             </div>
           </div>
+          <!-- Footer -->
        <footer class="footer"></footer> 
 
     </div>

@@ -3,19 +3,64 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="kuponcss.css">
+    <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="kuponjs.js" defer></script>
     <title>Kupon</title>
   </head>
 
   <body>
-  <nav class="navtop" id="navtop">
-    <ul>
-      <li><a href="#"><img src="images/backarrowicon.svg" alt="Tilbage"></a></li>
-      <li><a href="#"><img src="images/homeicon.svg" alt="Hjem"></a></li>
-    </ul>
-  </nav>
 
-  <header class="header"><h2>Kuponer</h2></header>
+      <!--  Sidebar -->
+
+      <div class="sidebar">
+        <ul>
+         <li> <a href="kupon.html" class="menu-item">
+            <img src="images/couponicon.svg" width="100px" alt="coupons"> Kuponer
+          </a></li>
+          <li><a href="badgelog.html" class="menu-item">
+            <img src="images/badgeicon.svg" width="80px" alt="badges"> Samlemærker
+          </a></li>
+          <li><a href="underconstruction.html" class="menu-item">
+            <img src="images/profilicon.svg" width="70px" alt="profile"> Profil
+          </a></li>
+          <li><a href="underconstruction.html" class="menu-item">
+            <img src="images/friendsicon.svg" width="90px" alt="friends"> Venner
+          </a></li>
+        </ul>
+      </div>
+    </div>
+
+      <!-- Topnav  -->
+
+    <div class="topnav">
+      <button onclick="history.back()"> <img src="images/backarrowicon.svg" width="30px" alt="back"></button>
+      <a href="home.html" class="topnav-item">
+      <img src="images/homeicon.svg" width="80px" alt="home">
+      </a>
+      <div class="toggle" onclick="toggleClassName();"></div>
+    </div>
+    
+      <!-- Header -->
+
+    <header class="header"><h2>Dine kuponer</h2></header>
+
+      <!-- Menu -->
+
+    <div class="menubar">
+      <a href="kupon.html" class="menu-item">
+        <img src="images/couponicon.svg" width="100px" alt="coupons"> 
+      </a>
+      <a href="badgelog.html" class="menu-item">
+        <img src="images/badgeicon.svg" width="80px" alt="badges"> 
+      </a>
+      <a href="underconstruction.html" class="menu-item">
+        <img src="images/profilicon.svg" width="70px" alt="profile"> 
+      </a>
+      <a href="underconstruction.html" class="menu-item">
+        <img src="images/friendsicon.svg" width="90px" alt="friends"> 
+      </a>
+    </div>
+
 
 <main class="gridcontainer">
 
@@ -67,16 +112,7 @@
   </div>
 
 </main>
-<footer>
-  <nav class="nav" id="nav">
-    <ul>
-      <li><a href="#"><img src="images/couponicon.svg" alt="Kupon"></a></li>
-      <li><a href="#"><img src="images/friendsicon.svg" alt="Venner"></a></li>
-      <li><a href="#"><img src="images/profilicon.svg" alt="Profil"></a></li>
-      <li><a href="#"><img src="images/badgeicon.svg" alt="Badge"></a></li>
-    </ul>
-  </nav>
-</footer>
+<footer></footer>
 
   <div id="overlay"></div>
 

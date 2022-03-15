@@ -1,4 +1,4 @@
-//Arrays?
+//Arrays? - Jacky
 let allbadges = ["badge1", "badge2", "badge3", "badge4", "badge5", "badge6", "badge7", "badge8"];
 let unlockedbadges = ["badge1", "badge2", "badge3", "badge4"];
 let lockedbadges = ["badge5", "badge6", "badge7", "badge8"];
@@ -13,7 +13,7 @@ console.log(allbadges);
 console.log(lockedbadges);
 console.log(unlockedbadges);
 
-//Burger-menu til desktop
+//Burger-menu til desktop - Jacky
 
 function toggleClassName() {
   var sidebar = document.querySelector(".sidebar");
@@ -27,7 +27,7 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-//Tabs
+//Tabs - Magnus
 
     function openPage(pageName,elmnt,color) {
       let i, tabcontent, tablinks;
