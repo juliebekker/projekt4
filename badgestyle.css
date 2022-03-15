@@ -72,6 +72,10 @@ body, html {
     justify-content: flex-start;
 }
 
+.badgeicon img {
+  width: 200px;
+}
+
 /*--- Header --- */
 
 .header{
