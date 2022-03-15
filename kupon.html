@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="dk" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="kuponcss.css">
-    <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="kuponjs.js" defer></script>
-    <title>Kupon</title>
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-  </head>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="kuponcss.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="kuponjs.js" defer></script>
+  <title>Kupon</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+</head>
 
   <body>
 
@@ -30,7 +30,6 @@
           </a></li>
         </ul>
       </div>
-    </div>
 
       <!-- Topnav  -->
 
@@ -41,7 +40,7 @@
       </a>
       <div class="toggle" onclick="toggleClassName();"></div>
     </div>
-    
+
       <!-- Header -->
 
     <header class="header"><h2>Dine kuponer</h2></header>
@@ -50,16 +49,16 @@
 
     <div class="menubar">
       <a href="kupon.html" class="menu-item">
-        <img src="images/couponicon.svg" width="100px" alt="coupons"> 
+        <img src="images/couponicon.svg" width="100px" alt="coupons">
       </a>
       <a href="badgelog.html" class="menu-item">
-        <img src="images/badgeicon.svg" width="80px" alt="badges"> 
+        <img src="images/badgeicon.svg" width="80px" alt="badges">
       </a>
       <a href="underconstruction.html" class="menu-item">
-        <img src="images/profilicon.svg" width="70px" alt="profile"> 
+        <img src="images/profilicon.svg" width="70px" alt="profile">
       </a>
       <a href="underconstruction.html" class="menu-item">
-        <img src="images/friendsicon.svg" width="90px" alt="friends"> 
+        <img src="images/friendsicon.svg" width="90px" alt="friends">
       </a>
     </div>
 
@@ -68,45 +67,48 @@
 
 
   <button data-modal-target="#modal" class="badge">
-    <div class="badgecontainer">
-       <div class="badgeicon">
+    <span class="badgecontainer">
+       <span class="badgeicon">
        <img src="images/couponicon.svg" alt="Kupon">
-       </div>
-       <div class="badgedesc">
-        <h2>Gratis kaffe</h2>
-         <p>Kantinen giver en gratis kaffe! Tryk på denne kupon og få en QR de kan scanne i kantinen.</p>
-       </div>
-     </div>
+     </span>
+       <span class="badgedesc">
+        <span class="h2">Gratis kaffe</span>
+        <br>
+        <span class="p">Kantinen giver en gratis kaffe! Tryk på denne kupon og få en QR de kan scanne i kantinen.</span>
+       </span>
+     </span>
   </button>
 
   <button data-modal-target="#modal" class="badge">
-    <div class="badgecontainer">
-       <div class="badgeicon">
+    <span class="badgecontainer">
+       <span class="badgeicon">
        <img src="images/couponicon.svg" alt="Kupon">
-       </div>
-       <div class="badgedesc">
-        <h2>Gratis kage</h2>
-         <p>Kantinen giver et gratis stykke kage! Tryk på denne kupon og få en QR de kan scanne i kantinen.</p>
-       </div>
-     </div>
+     </span>
+       <span class="badgedesc">
+        <span class="h2">Gratis kage</span>
+        <br>
+        <span class="p">Kantinen giver et gratis stykke kage! Tryk på denne kupon og få en QR de kan scanne i kantinen.</span>
+       </span>
+     </span>
   </button>
 
   <button data-modal-target="#modal" class="badge" id="margin-bottom">
-    <div class="badgecontainer">
-       <div class="badgeicon">
+    <span class="badgecontainer">
+       <span class="badgeicon">
        <img src="images/couponicon.svg" alt="Kupon">
-       </div>
-       <div class="badgedesc">
-        <h2>Gratis øl</h2>
-         <p>Fredagsbaren giver en gratis øl! Tryk på denne kupon og få en QR de kan scanne til fredagsbar.</p>
-       </div>
-     </div>
+     </span>
+       <span class="badgedesc">
+        <span class="h2">Gratis øl</span>
+        <br>
+        <span class="p">Fredagsbaren giver en gratis øl! Tryk på denne kupon og få en QR de kan scanne til fredagsbar.</span>
+       </span>
+     </span>
   </button>
 
 
   <div class="modal" id="modal">
     <div id="modal-qrbillede">
-     <img src="images/Icon metro-qrcode.svg" alt="Qr-kode">
+     <img src="images/Iconmetroqrcode.svg" alt="Qr-kode">
    </div>
     <div class="modal-qrtekst">
       <div><h2>Scan QR-kode</h2></div>
