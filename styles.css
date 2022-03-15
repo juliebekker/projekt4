@@ -18,6 +18,14 @@
 }
 
 /* --- Navbar & Menu --- */
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
 
 .topnav {
     background-color: #7499A3;
