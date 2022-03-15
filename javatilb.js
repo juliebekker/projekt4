@@ -1,6 +1,5 @@
 document.getElementById('belønning').style.visibility='hidden';
 
-
 function myFunction() {
   let x = document.getElementById("nummer").value;
   let text;
