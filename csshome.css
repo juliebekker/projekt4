@@ -42,33 +42,12 @@ h1{
 
 
 /*h2 media*/
-
-@media screen and (max-width:767px){
-  h2{
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
-  }
-}
-
-
-@media screen and (min-width:768px) and (max-width:1023px){
  h2{
-   font-size: 22px;
+   font-size: 50px;
    justify-content: center;
    align-items: center;
    margin-left: 20px;
  }
-}
-
-@media screen and (min-width:1024px){
- h2{
-   font-size: 30px;
-   justify-content: center;
-   align-items: center;
- }
-}
 /*Done h2 media*/
 
 
@@ -80,7 +59,7 @@ margin:auto;
 
 .menu{
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 100px;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 200px 200px;
   width: auto;
@@ -89,30 +68,31 @@ margin:auto;
 .icon{
   display: inline-grid;
   grid-template-rows: 1fr 1fr;
+  height: 100%;
   grid-gap: 0px;
   justify-content: center;
   align-items: center;
+  margin-top: 160px;
 }
 
-@media screen and (max-width:767px){
 .badgeicon{
   background-image: url("images/ucl.png");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-left: 30px;
+  margin-left: 75px;
 }
 
 .profileicon{
   background-image: url("images/profil.png");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -122,8 +102,8 @@ margin:auto;
   background-image: url("images/kupon.png");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -133,109 +113,13 @@ margin:auto;
   background-image: url("images/friends.png");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-}
-
-
-@media screen and (min-width:768px) and (max-width:1023px){
-.badgeicon{
-  background-image: url("images/ucl.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 110px;
-  width: 110px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-left: 30px;
-}
-
-.profileicon{
-  background-image: url("images/profil.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 110px;
-  width: 110px;
+  height: 200px;
+  width: 200px;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.kuponicon{
-  background-image: url("images/kupon.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 110px;
-  width: 110px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.friendsicon{
-  background-image: url("images/friends.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 110px;
-  width: 110px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-}
-@media screen and (min-width:1024px){
-.badgeicon{
-  background-image: url("images/ucl.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 120px;
-  width: 120px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-left: 30px;
-}
-
-.profileicon{
-  background-image: url("images/profil.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 120px;
-  width: 120px;
-  margin-left: -10px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.kuponicon{
-  background-image: url("images/kupon.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 120px;
-  width: 120px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.friendsicon{
-  background-image: url("images/friends.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 120px;
-  width: 120px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-}
 
 *{
   margin: 0;
@@ -245,35 +129,23 @@ margin:auto;
 
 
 .box{
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 70px;
-  margin-top: 40px;
-  margin-left: 100px;
+  margin-top: 150px;
+  margin-left: 260px;
 }
 
 .box img{
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (min-width:1024px){
-.box{
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 70px;
-  margin-top: 40px;
-  margin-left: 140px;
-}
+  margin: 80px;
 }
 
 
