@@ -1,23 +1,4 @@
-
-/*bottom menu*/
-
-var nav = document.getElementById('nav');
-  window.onscroll = function () {
-
-    if(window.pageYOffset > 100) {
-
-    nav.style.position = "fixed";
-    nav.style.bottom = 0;
-
-  }else {
-    box.style.position = "absoulte";
-    box.style.bottom = 100;
-  }
-  }
-
-/*bottom menu*/
-
-/*qr popup*/
+/*qr popup - Julie */
 
   const openModalButtons = document.querySelectorAll('[data-modal-target]')
   const closeModalButtons = document.querySelectorAll('[data-close-button]')
@@ -51,3 +32,17 @@ var nav = document.getElementById('nav');
   }
 
 /*qr popup*/
+
+//Burger-menu til desktop - Jacky
+
+function toggleClassName() {
+  var sidebar = document.querySelector(".sidebar");
+  var toggle = document.querySelector(".toggle");
+  sidebar.classList.toggle("active");
+  toggle.classList.toggle("active");
+}
+
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
