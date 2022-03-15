@@ -34,6 +34,8 @@ p {
 
 /*det basale*/
 
+/*span tekst*/
+
 .h2 {
   font-weight: bold;
   color: #003A44;
@@ -45,6 +47,8 @@ p {
   color: #003A44;
   font-family: arial;
 }
+
+/*span tekst*/
 
 /*navigation*/
 
@@ -132,7 +136,7 @@ nav ul li a img {
 }
 /*qr boks*/
 
-/*Kupon siden*/
+/*kupon siden*/
 
 .gridcontainer{
     display:flex;
@@ -184,7 +188,7 @@ nav ul li a img {
     padding-left: 20px;
 }
 
-/*Kupon siden*/
+/*kupon siden*/
 
 
 @media only screen and (max-width: 769px) {
