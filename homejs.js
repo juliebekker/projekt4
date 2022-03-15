@@ -1,3 +1,4 @@
+//Lavet af: Anna //
 let images = ['images/badges/3dprinter.png', 'images/badges/adobepro.png','images/badges/beerbadge.png',
 'images/badges/studiekort.png', 'images/badges/kantinevs2.png']
 let i =0;
