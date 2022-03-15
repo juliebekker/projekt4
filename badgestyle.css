@@ -29,7 +29,7 @@
 
 body, html {
   font-family: Arial;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .badge1, .badge2, .badge3, .badge4, .badge5, .badge6, .badge7, .badge8 {
@@ -244,7 +244,7 @@ body, html {
   padding: 25px 16px;
   font-size: 25px;
   width: 35%;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .tabcontent {
@@ -252,7 +252,7 @@ body, html {
     display: none;
     padding: 100px 20px;
     height: 100%;
-    font-style: bold;
+    font-weight: bold;
   }
 
 #Alle {background-color: #D3ECEB;}
