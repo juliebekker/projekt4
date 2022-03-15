@@ -22,7 +22,7 @@
         </div>
 
         <div class="billede">
-          <img src="images/styleguide/farver.jpg" alt="farvekoder">
+          <img src="images/styleguide/farver.JPG" alt="farvekoder">
         </div>
 
         <div class="kode">
@@ -221,6 +221,27 @@
               }
           </pre>
         </div>
+        <div class="billede">
+          <p>Burger navigationsbar</p>
+          <img src="images/styleguide/burgernav.JPG" alt="Burger navigationsbar">
+        </div>
+
+        <div class="kode">
+          <p>Javascript</p>
+          <pre>
+            function toggleClassName() {
+              var sidebar = document.querySelector(".sidebar");
+              var toggle = document.querySelector(".toggle");
+              sidebar.classList.toggle("active");
+              toggle.classList.toggle("active");
+            }
+
+            window.addEventListener("scroll", function () {
+              var header = document.querySelector("header");
+              header.classList.toggle("sticky", window.scrollY > 0);
+            });
+          </pre>
+        </div>
 
       </div>
 
@@ -232,7 +253,7 @@
         </div>
 
         <div class="billede">
-          <img src="images/styleguide/typografi.jpg" alt="Typografi">
+          <img src="images/styleguide/typografi.JPG" alt="Typografi">
         </div>
 
         <div class="kode">
@@ -267,18 +288,20 @@
         </div>
 
         <div class="billede">
-          <img src="images/styleguide/taps.jpg" alt="Tabs">
+          <img src="images/styleguide/taps.JPG" alt="Tabs">
         </div>
 
         <div class="kode">
           <p>HTML</p>
-          <pre><button class="tablink" onclick="openPage('Alle', this, '#D3ECEB')" id="defaultOpen">Alle</button>
-            <button class="tablink" onclick="openPage('Laest', this, '#D3ECEB')">Låste</button>
-            <button class="tablink" onclick="openPage('Optjent', this, '#D3ECEB')">Optjent</button>
-            
-              <hr>
-            
-                <div id="Alle" class="tabcontent"></pre>
+          <pre>
+            &lt;button class="tablink" onclick="openPage('Alle', this, '#D3ECEB')" id="defaultOpen"&gt;Alle&lt;/button&gt;
+            &lt;button class="tablink" onclick="openPage('Laest', this, '#D3ECEB')"&gt;Låste&lt;/button&gt;
+            &lt;button class="tablink" onclick="openPage('Optjent', this, '#D3ECEB')"&gt;Optjent&lt;/button&gt;
+
+              &lt;hr&gt;
+
+                &lt;div id="Alle" class="tabcontent"&gt;
+          </pre>
 
           <p>CSS</p>
           <pre>.tablink {
@@ -296,7 +319,7 @@
             width: 35%;
             font-weight: bold;
           }
-          
+
           .tabcontent {
               color: white;
               display: none;
@@ -304,11 +327,11 @@
               height: 100%;
               font-weight: bold;
             }
-          
+
           #Alle {background-color: #D3ECEB;}
           #Laest {background-color: #D3ECEB;}
           #Optjent {background-color: #D3ECEB;}
-          
+
           hr {
               margin-top: 61px;
               border: none;
@@ -319,17 +342,17 @@
             function openPage(pageName,elmnt,color) {
               let i, tabcontent, tablinks;
               tabcontent = document.getElementsByClassName("tabcontent");
-              for (i = 0; i < tabcontent.length; i++) {
+              for (i = 0; i &lt; tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
               }
               tablinks = document.getElementsByClassName("tablink");
-              for (i = 0; i < tablinks.length; i++) {
+              for (i = 0; i &lt; tablinks.length; i++) {
                 tablinks[i].style.backgroundColor = "";
               }
               document.getElementById(pageName).style.display = "block";
               elmnt.style.backgroundColor = color;
             }
-            
+
             document.getElementById("defaultOpen").click();</pre>
 
         </div>
