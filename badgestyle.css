@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* --- Badges --- */
+
 .gridcontainer{
     /*display:grid;
     height:100%;
@@ -70,6 +72,8 @@ body, html {
     justify-content: flex-start;
 }
 
+/*--- Header --- */
+
 .header{
     font: 40px arial;
     font-weight: bold;
@@ -79,12 +83,14 @@ body, html {
     padding-left: 20px;
 }
 
+/* --- Navbar & Menu --- */
+
 .topnav {
     background-color: #7499A3;
     display: flex;
-	flex-grow: 1;
-	height: 100px;
-	overflow: hidden;
+	  flex-grow: 1;
+	  height: 100px;
+	  overflow: hidden;
     justify-content: space-between;
     position: sticky; 
     top: 0;
@@ -93,15 +99,20 @@ body, html {
 }
 
 .topnav img {
-    margin-left: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.topnav .toggle {
+  display: none;
 }
 
 .menubar {
     background-color: #7499A3;
     display: flex;
-	flex-grow: 1;
-	height: 100px;
-	overflow: hidden;
+	  flex-grow: 1;
+	  height: 95px;
+	  overflow: hidden;
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
@@ -120,6 +131,11 @@ body, html {
 }
 
 @media screen and (min-width:1024px){
+    
+   .topnav img {
+    margin-right: 80px;
+}
+  
     .badgeicon img {
         width: 100px;
     }
@@ -141,12 +157,13 @@ body, html {
     }
       
       .topnav .toggle {
-        position: relative;
+        position: absolute;
         width: 36px;
         height: 28px;
         background: url(images/toggle.png);
         background-size: cover;
         cursor: pointer;
+        right: 0;
         margin-right: 20px;
       }
       .topnav .toggle.active {
@@ -155,9 +172,9 @@ body, html {
         
       }
       
-      @media (max-width: 1023px) {
+      @media (min-width: 1023px) {
         .topnav .toggle {
-          display: none;
+          display: block;
         }
     }
 
@@ -166,7 +183,7 @@ body, html {
 .sidebar {
     position: fixed;
     right: -200px;
-    top: 100px;
+    top: 95px;
     width: 200px;
     height: 100%;
     background: #7499A3;
@@ -199,18 +216,24 @@ body, html {
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1024px) {
     .sidebar ul {
-        display: none;
+        display: block;
     }
 }
 
+@media (max-width: 1024px) {
+  .sidebar ul {
+    display: none;
+  }
+}
 
+/* --- Tabs --- */
 
 .tablink {
-  border-top-left-radius:2em; 
+  border-top-left-radius:2em;
   border-top-right-radius:2em;
-  margin: -14px -100px 0px 0px;
+  margin: -16px -100px 0px 0px;
   background-color: #3E747F;
   color: white;
   float: left;
@@ -218,8 +241,8 @@ body, html {
   outline: none;
   cursor: pointer;
   padding: 25px 16px;
-  font-size: 24px;
-  width: 25%;
+  font-size: 25px;
+  width: 35%;
   font-style: bold;
 }
 
